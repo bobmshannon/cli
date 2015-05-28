@@ -640,7 +640,7 @@
       "modified": false
    },
    {
-      "id": "CF_NAME create-service SERVICE PLAN SERVICE_INSTANCE\n\nEXAMPLE:\n   CF_NAME create-service dbaas silver mydb\n\nTIP:\n   Use 'CF_NAME create-user-provided-service' to make user-provided services available to cf apps",
+      "id": "CF_NAME create-service SERVICE PLAN SERVICE_INSTANCE [-t TAGS]\n\nEXAMPLE:\n   CF_NAME create-service dbaas silver mydb\n   CF_NAME create-service dbaas silver mydb -t \"list, of, tags\"\n\nTIP:\n   Use 'CF_NAME create-user-provided-service' to make user-provided services available to cf apps",
       "translation": "CF_NAME create-service SERVICE PLAN INSTANCE_DE_SERVICE\n\nExemple: CF_NAME create-service cleardb spark clear-db-mine\n\n:CONSEIL:\n   Utilisez 'CF_NAME create-user-provided-service' pour rendre disponibles aux applications cf, les services fournis par l'utilisateur",
       "modified": true
    },
@@ -4537,6 +4537,11 @@
    {
       "id": "Use a one-time password to login",
       "translation": "Utilisez un mot de passe unique pour se connecter",
+      "modified": false
+   },
+   {
+      "id": "User provided tags",
+      "translation": "User provided tags",
       "modified": false
    },
    {

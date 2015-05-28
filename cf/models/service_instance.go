@@ -11,6 +11,7 @@ type ServiceInstanceRequest struct {
 	SpaceGuid string                 `json:"space_guid"`
 	PlanGuid  string                 `json:"service_plan_guid"`
 	Params    map[string]interface{} `json:"parameters,omitempty"`
+	Tags      []string               `json:"tags,omitempty"`
 }
 
 type ServiceInstanceFields struct {
