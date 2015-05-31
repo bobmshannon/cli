@@ -145,8 +145,7 @@ func (cmd *CliRpcCmd) CallCoreCommand(args []string, retVal *bool) error {
 	return nil
 }
 
-func (cmd *CliRpcCmd) GetOutputAndReset(args bool, retVal *[]string) error {
-	*retVal = cmd.outputCapture.GetOutputAndReset()
+func (cmd *CliRpcCmd) GetOutputCapture(args bool, retVal *[]string) error {
 	retVal = cmd.outputBucket
 	return nil
 }
